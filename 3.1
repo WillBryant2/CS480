@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<script>
+
+function remove() {
+var x = document.getElementById("select");
+x.remove(x.selectedIndex); <!-- using remove method to remove the items--->
+}
+</script>
+
+<body>
+<form>
+<select id = "select">
+<option>Option1</option>
+<option>Option2</option>
+<option>Option3</option>
+</select><br><br>
+<input type = "button" onclick = "remove()" value = "Remove Items">
+</form>
+
+</body>
+</html>

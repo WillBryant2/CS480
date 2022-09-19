@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>Assignment 3</title>
+</head>
+<body> 
+
+<script>
+     
+var bolded_words;
+window.onload = getBold_items();
+ 
+
+function getBold_items() 
+{
+  bold_Items = document.getElementsByTagName('strong'); 
+}
+
+function highlight() 
+{
+   for (var i=0; i<bolded_words.length; i++)
+   {                                                    
+    bolded_words[i].style.color = "green";
+    }
+}
+
+
+function return_normal()
+{
+  for (var i=0; i<bolded_words.length; i++) 
+  {
+       bolded_words[i].style.color = "black";
+  }
+}
+
+</script>
+</body>
+</html>
