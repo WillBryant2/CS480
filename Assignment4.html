@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="" content="width=device-width">
+
+<title>Validation</title>
+
+</head>
+
+<body>
+
+<form>
+
+<label for="fname">Full Name</label>
+
+<input type="text" name="fname" pattern="\w*\s\w*" required
+
+title="first and last name with a space in between."/>
+
+<br>
+
+<label for="pass">Password</label>
+
+<input type="text" name="pass" pattern="[\w\d]{7,}"
+
+title=" Must be at least 7 characters"/>
+
+<br>
+
+<label for="staddr">Street Address</label>
+
+<input type="text" name="staddr" pattern="[1-5][\w]{1,15}"
+
+title="1-5 numbers followed by street name (up to 15 characters)"/>
+
+<br>
+
+<label for="zipcode">Zip Code</label>
+
+<input type="text" name="zipcode" pattern="\d{5}"
+
+title="5 digits exactly"/>
+
+<br>
+
+<label for="DOB">Date of Birth</label>
+
+<input type="text" name="DOB" pattern="[0-1][0-9]-[0-3][0-9]-[0-9]{4}"
+
+title="format: mm-dd-yyyy"/>
+
+<br>
+
+<label for="creditcd">Credit Card</label>
+
+<input type="text" name="creditcd" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+
+title="format: xxxx-xxxx-xxxx-xxxx"/>
+
+<br>
+
+<input type="submit" name="submit"/>
+
+</form>
+
+</body>
+
+</html>
