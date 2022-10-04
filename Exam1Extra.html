@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Extra Credit Problem</title>
+<script type = "text/javascript">
+
+function validate() {
+
+if( document.myForm.Name.value == "" ) {
+alert( "Please provide your name!" );
+document.myForm.Name.focus() ;
+return false;
+}
+if( document.myForm.LastName.value == "" ) {
+alert( "Please enter your last name" );
+document.myForm.LastName.focus() ;
+return false;
+}
+if ( document.myForm.PhoneNumber.value == "" || isNaN( document.myForm.PhoneNumber.value ) ||
+document.myForm.PhoneNumber.value.length != 10 ) {
+
+alert( "Please enter your number in the format (xxx)xxx-xxxx." );
+document.myForm.PhoneNumber.focus() ;
+return false;
+}
+if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
+document.myForm.Zip.value.length != 5 ) {
+
+alert( "Please provide a zip in the format #####." );
+document.myForm.Zip.focus() ;
+return false;
+}
+alert( "Login" );
+}
+</script>
+</head>
+<body>
+<form action = "" name = "form" onsubmit = "return(validate());">
+<table>
+<tr>
+<td>FirstName </td>
+<td><input type = "text" name = "Name" /></td>
+</tr>
+<tr>
+<td>LastName</td>
+<td><input type = "text" name = "LastName" /></td>
+</tr>
+<tr>
+<td>PhoneNumber</td>
+<td><input type = "number" name = "PhoneNumber" placeholder = "(xxx) xxx-xxxx" /></td>
+</tr>
+<tr>
+<td>Zip Code</td>
+<td><input type = "text" name = "Zip" /></td>
+</tr>
+<tr>
+<td></td>
+<td><input type = "submit" value = "Submit" /></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
