@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exam Question 2</title>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("li").css({"present": $("#present").val()});
+    });
+});
+</script>
+</head>
+<body>
+
+<h2> Change List Item Display Property </h2>
+<p>Click the button to change the display property of the list items.</p>
+
+<button>Button</button>
+
+<select id="present">
+  <option value="block">Block</option>
+  <option value="inline">Inline</option>
+  <option value="inline-block">Inline-Block</option>
+  <option value="none">None</option>
+</select>
+
+<ol>
+  <li>Milestone 1</li>
+  <li>Milestone 2</li>
+  <li>Milestone 3</li>
+</ol>
+
+</body>
+</html>
