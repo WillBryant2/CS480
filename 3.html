@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<script>
+function sundayss() {
+  for (let year = 2000; year <= 2021; year++) {
+    const d = new Date(year, 0, 1);
+    if (d.getDay() === 0) {
+      console.log("The 1st of January is on  " + year);
+    }
+  }
+}
+sundayss();
+</script>
+</html>

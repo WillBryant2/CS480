@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<script>
+function solution( aray, size)
+{
+let First = Number.MAX_VALUE,
+    Second = Number.MAX_VALUE;
+
+
+if (arr_size < 2)
+{
+	document.write(" Error ");
+	return;
+}
+
+
+for (let i = 0; i < size ; i ++)
+  {
+    if (aray[i] < First){
+      First = aray[i];
+    }
+  }
+
+for (let i = 0; i < size ; i ++){
+	if (aray[i] < Second && aray[i] > First){
+	Second = aray[i];
+	}
+}
+if (Second == Number.MAX_VALUE )
+	document.write("There is no second smallest element\n");
+else
+	document.write("The second "+
+	"Smallest element is " + Second +'\n');
+}
+
+
+let array = [ 10, 20, 6, 12, 40, 0 ];
+let n = array.length;
+solution(array, n);
+</script>    
+</html>

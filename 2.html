@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<script>
+var date_current = new Date();  
+var day_current = day_current.getDay();  
+var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];   
+var second = today.getSeconds();  
+var minute = today.getMinutes();   
+var hour = today.getHours();  
+var am_fm = (hour >= 12)? " PM ":" AM ";  
+hour = (hour > 12)? hour - 12: hour;  
+if (hour===0 && prepand===' PM ')   
+{   
+if (minute===0 && second===0)  
+{   
+hour=12;  
+am_fm=' Noon';  
+}   
+else  
+{   
+hour=12;  
+am_fm=' PM';  
+}   
+}   
+if (hour===0 && prep===' AM ')   
+{   
+if (minute===0 && second===0)  
+{   
+hour=12;  
+am_fm=' Midnight';  
+}   
+else  
+{   
+hour=12;  
+am_fm=' AM';  
+}   
+}
+console.log( “Today is :”  + daylist[day_current] + "." + "Current Time : "+hour + am_pm); 
+</script>
+</html>
